@@ -61,4 +61,32 @@ public class TodoList {
 		}
 		return false;
 	}
+
+//	public String getTitle(String keyword) {
+//		String title = "";
+//		for (TodoItem myitem : list) {
+//			if (myitem.getTitle().contains(keyword)) {
+//				title = myitem.getTitle();
+//			}
+//		}
+//		return title;
+//	}
+
+//	public ArrayList<TodoItem> getDesc() {
+//		return null;
+//	}
+
+	public TodoItem getItem(int index) {
+		return list.get(index);
+	}
+
+	public int getCount() {
+		int cnt = 0;
+		
+		for (TodoItem myitem : list) {
+			cnt++;
+		}
+		
+		return cnt;
+	}
 }
